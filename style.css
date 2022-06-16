@@ -1,0 +1,88 @@
+html {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("bg-intro-desktop.png");
+    font-family: [Poppins];
+}
+
+body {
+    display: flex;
+    align-items: center;
+    margin: 80px;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 'a a a a b b b' 'a a a a c c c' 'a a a a c c c' 'a a a a c c c';
+}
+
+form {
+    flex-direction: column;
+}
+
+.item-a {
+    background-color: hsl(286, 81%, 29%);
+    color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    grid-area: b;
+    width: 100%;
+}
+
+.item-b {
+    background-color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    grid-area: c;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.header {
+    grid-area: a;
+    height: 100vh;
+    color: aliceblue;
+    padding: 120px 50px 50px 100px;
+}
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    color: azure;
+}
+
+#text:active {
+    background-image: url("icon-error.svg");
+    position: right;
+    padding-right: 10px;
+}
+
+small {
+    font-size: 10px;
+}
+
+.term {
+    color: brown;
+}
+
+@media screen and (max-width: 600px) {
+    div,
+    .item-a {
+        width: 80%;
+    }
+}
